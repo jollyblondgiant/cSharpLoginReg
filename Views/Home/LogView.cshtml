@@ -1,0 +1,18 @@
+@using LoginReg.Models;
+<h1>Log in!</h1>
+<a href="/">Register</a>
+@model Login
+<form asp-action="Login" asp-controller="Home" method="POST">
+
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email"></label>
+    <input type="email" asp-for="Email">
+
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label>
+    <input type="password" asp-for="Password">
+
+
+
+    <input type="submit" value="Log In!">
+</form>
